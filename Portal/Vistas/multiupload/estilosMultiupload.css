@@ -1,0 +1,11 @@
+.span {
+    font-family: Times New Roman, Times, Garamond, Georgia, Cambria; 
+    color:#142667; 
+}
+.spanhover:hover{
+    cursor: pointer;
+    color:#142667;
+    text-decoration: underline;
+}
+.nuevoTR{ font-style:oblique; color:#666;
+}

@@ -1,0 +1,55 @@
+<?php
+$folio=$_GET["foliox"];
+include("../../conexionSimple.php");
+$sd =new conexion();
+$sd->conectar();
+//$uploaddir = './uploads/';
+
+/*$select = mssql_query("select estatusidfk from tfolio_solicitud where numero_folio=".$folio."  ");
+$selectx=mssql_fetch_array($select);*/
+
+//if($selectx["estatusidfk"]!=76){
+//$sef=str_replace("![a-zA-Z0-9-]","",$_FILES['uploadfile']['name']);
+
+$sef = trim($sef);
+
+$sef = strtr($_FILES['uploadfile']['name'], "áéíóúÁÉÍÓÚñÑç", "aeiouAEIOUnNc");
+$sef = preg_replace("/¡|¿|\?|!|\^|'|,|;|\|:|@|#|\$|%|&|\"|€|¬|~|_|\+|´| `|¨|\*|\/|\||\\||\[|\]|\(|\)|\{|\}/","",$sef);
+//$sef = preg_replace('/¡|¿|\?|!|\^|"|,|;|\|:|@|#|\$|%|&|\"|€|¬|~|_|\+|´| `|¨|\*|\/|\||\\||\[|\]|\(|\)|\{|\}/',"",$sef);
+$sef = preg_replace("/( - |- | -| )/","-",$sef);
+$sef = preg_replace("/-{2,}/","-",$sef);
+$sef = preg_replace("/^-+|-+$|^\.+|\.+$/","",$sef);
+$sef=str_replace('Ó','O',$sef);
+
+
+
+$uploaddir = '../../../imagenesProveedores/'.$folio; 
+$nombre=$folio.basename($sef);
+$re=mssql_query("select * from imagenesProveedores where nombre='".$nombre."' ");
+$num_rows = mssql_num_rows($re);
+if($num_rows>0){
+	while($num_rows!=0){$num=$num+1;
+	$nombre=$folio."-".$num.basename($sef);
+		$re=mssql_query("select * from imagenesProveedores where nombre='".$nombre."' ");
+        $num_rows = mssql_num_rows($re);
+	$nombre=$folio."-".$num.basename($sef);
+	$uploaddir = '../../../imagenesProveedores/'.$folio."-".$num;}
+	
+	}
+$file = $uploaddir . basename($sef);
+//$sex=mssql_query("SELECT REPLACE('".$file."','c\"','') file");$se=mssql_fetch_array($sex);
+if (move_uploaded_file($_FILES['uploadfile']['tmp_name'], $file)) { 
+//$file=str_replace('"','',$file);
+//$file=str_replace('Ó','O',$file);
+
+$in=mssql_query("INSERT INTO imagenesProveedores(folio,nombre,direccion,estatus) VALUES(".$folio.",'".$nombre."','".$file."','3')");
+
+//$se=mssql_fetch_array($sex);
+//if($se["direccion"]){}
+  echo "success,,".$nombre; 
+} else {
+	echo "error";
+}
+$sd->desconectar();
+//}else{echo 1;}
+?>

@@ -1,0 +1,388 @@
+#contenedor{
+    width:97%; /* ancho de div en pantalla */
+    margin: auto;
+    margin-top: 5px; /*margen de arriba */
+    margin-bottom: 5px;
+    /*funciones para efecto ovalado al div*/
+    border-radius: 10px; 
+    overflow: hidden;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: hsl(0, 20%, 81%);
+    color: rgb(177, 145, 145);
+    background-color: #ffffff;
+}/* clase para darle tono a la fuente y color al fondo*/
+
+header{
+    height: 200px;
+    background: rgba(23, 22, 24, 0.596);
+}
+
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 150px;
+}
+
+nav{
+    background: #e7e7e7;
+    height: 60px; /* largo del menu */
+}
+
+nav h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#contenido{
+    width: 100%;
+    height:600px;
+    float:left;
+    background: rgba(232, 247, 253); /*196, 219, 191, 0.671*/
+    margin-top: 0px;
+    margin-right: 10px;
+    overflow: auto;
+    display: block;
+}  
+.transp-block {
+    width: 100%;
+    height: 100%;
+   } 
+    img.transparent {
+    width: 40%;
+    height: 30%;
+    background-repeat: repeat;
+    position:relative;left:30%;top:30%;
+    filter:alpha(opacity=4);
+    opacity:.2;
+   }
+
+#contenido h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+}
+
+/*#contenido label{
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+}*/
+
+aside{
+    width: 29%;
+    height: 50%;
+    background: green;
+    margin-top: 10px;
+    float: right;
+}
+
+aside h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+}
+
+footer{
+    background: rgba(104, 68, 68, 0.253);
+    clear: both;
+}
+
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* EFECTOS PARA BOTONES*/
+
+
+/*-------------------Boton Uno-----------*/
+.buttonDetalle {
+    background-color: #1067AE;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width:60px;
+    height:30px;
+}
+
+
+/*-----------------------Boton Dos----------------*/
+.button {
+    background-color: #9c1919b0; /* rojo */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*
+.button3 {border-radius: 8px;}*/
+
+
+/*-------------------Boton Tres------------------------*/
+.button {
+    background-color: #4CAF50; /* Green */
+    width: 5%;
+    height: 40%;
+    border: none;
+    color: white;
+    padding: 8px 4px;
+    text-align: center;
+    text-decoration:wavy;
+    display: inline-block;
+    font-size: 90%;
+    font-style: italic;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-left:15px;
+    /*-webkit-transition-duration: 0.4s;  Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonAzul {
+    background-color:#1067AE; 
+    color: black; 
+    border: 1px solid  #1067AE;
+    width: 5%;
+    height: 40%;
+}
+
+.buttonAzul:hover {
+    background-color: #e7e7e7;
+    color:#1067AE;
+}
+
+.buttonVerde {
+    background-color: #4CAF50; 
+    color: black; 
+    border: 1px solid #4CAF50;
+    width: 5%;
+    height: 40%;
+}
+
+.buttonVerde:hover {
+    background-color: #e7e7e7;
+    color: #4CAF50;
+}
+
+.buttonCielo {
+    background-color: #008CBA; 
+    color: black; 
+    border: 1px solid #008CBA;
+    width: 5%;
+    height: 40%;
+}
+
+.buttonCielo:hover {
+    background-color: #e7e7e7;
+    color: #008CBA;
+}
+
+.buttonBlanco {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    width: 5%;
+    height: 40%;
+}
+
+.buttonBlanco:hover {background-color: #85C1E9;}/*#e7e7e7*/
+
+
+/*Pagina de estudio http://www.w3bai.com/--------------------*/
+
+.caja {
+    width: 8%;
+    height: 28px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: #FBFCFC;
+    background-image: url('../imgs/buscar20px.png');
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 25px;
+    transition: width 0.4s ease-in-out;
+    margin-left:10px;
+  }
+  
+  .caja:focus {
+    width: 10%;
+  }
+
+  .visorbanner{
+    overflow:hidden; 
+    position: relative;/*tambien puede ser absolute si se quiere*/
+    width: 100%;
+    height: 200px;
+    }
+   .slide
+   {
+   position: absolute;
+   top: 0px;
+   left:0px;
+   width: 100%;
+   height: 100%;
+   }
+   .slide2
+   {
+   position: absolute;
+   top: 5px;
+   right:0px;
+   margin-right:10px;
+   cursor: pointer;
+   } 
+
+.span {
+    font-family: Times New Roman, Times, Garamond, Georgia, Cambria; 
+    color:#142667; 
+}
+.spanhover:hover{
+    cursor: pointer;
+    color:#211915;
+    text-decoration: underline;
+}
+.tituloTablas {
+    font-family: Times New Roman;
+    font-size: 14px;
+    padding: 5px;
+    font-style: normal;
+    caption-side: bottom;
+    color: #e7e7e7 ;
+    /*text-align: right;
+    letter-spacing: 1px;  #2874A6*/
+    background-color: #142667;
+  }
+
+  .styled-select { width: 80%; 
+    height: 24px; 
+    overflow: hidden; 
+    background: url(new_arrow.png) no-repeat right #ddd; 
+    border: 1px solid #ccc; 
+}
+  .sidebar-box select {
+    display:block;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 2px 10px;
+    height:22px;
+    margin:15px auto;
+    min-width: 90px;
+    /*-webkit-appearance: none;
+     background-color: #ffffff; */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+        linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+      background-repeat: no-repeat, repeat;
+      background-position: right .7em top 50%, 0 0;
+      background-size: .50em auto, 100%;}
+
+     /* .cajaSelect {
+        margin:20px auto 40px auto;	
+        border:1px solid #d9d9d9;
+        height:30px;
+        overflow: hidden;
+        width: 230px;
+        position:relative;
+     }*/
+     select {
+        background: #FBFCFC;
+        margin-top: 23px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 11px;
+        height: 26px;
+        padding: 3px;
+        width: 6%;
+        margin-left:7px;
+        margin-right:7px;
+        cursor: pointer;
+     }
+     select:focus{ 
+        outline:none;
+        /*width: 25%;*/
+    }
+    select:required:invalid {
+        color: #666;
+      }
+      option[value=''][disabled] {
+        display: none;
+      }
+      option {
+        color: #000;
+      }
+     
+    /* .cajaSelect::after{
+         content:"\025be";
+         display:table-cell;
+         padding-top:7px;
+         text-align:center;
+         width:30px;
+         height:30px;
+         background-color:#d9d9d9;
+         position:absolute;
+         top:0;
+         right:0px;	
+         pointer-events: none;
+     }*/
+     td:hover {
+        background-color: #D8E2F5;
+      }
+      .calendar {
+        background: #FBFCFC;
+        margin-top: 23px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 11px;
+        height: 26px;
+        padding: 5px;
+        width: 6%;
+        margin-left:7px;
+        margin-right: 7px;
+        cursor: pointer;
+     }
+     .calendar:focus{ 
+        outline:none;
+        /*width: 25%;*/
+    }
+    .selectPequeno {
+        background: #FBFCFC;
+        margin-top: 0px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 7px;
+        font-size: 10px;
+        height: 23px;
+        padding: 0px;
+        width: 4%;
+        margin-left:3px;
+        cursor: pointer;
+     }
+     select:focus{ 
+        outline:none;
+        /*width: 25%;*/
+    }

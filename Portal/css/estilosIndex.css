@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif
+}/* clase para darle tono a la fuente y color al fondo*/
+
+h1 {
+    margin:0; 
+    padding:0;
+    color:#333;
+    font-size:150%;
+    text-align:center;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50) translateY(-50);
+    z-index: -1;
+}
+
+.login-block {
+    /*width: 30%;       
+    height: 60%;
+    margin-left:35%;   centra de izquierda a derecha 
+    margin-right:35%; centra de derecha a izquierda 
+
+    margin-top: 15%; */
+background-color:wheat;
+opacity: 0.7;
+    margin: 25% 35% 25% 35%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 3px solid #333;
+
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	height: 550px;
+    width: 330px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px auto;*/
+
+}
+
+.login-block input {
+    width: 80%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    width: 70%;
+    margin-left:15%;  /* centra boton de izquierda a derecha */
+    margin-right:15%; /* centra boton de derecha a izquierda */
+	opacity: 0.8;
+}
+
+.login-block input#username:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+    width: 70%; 
+    margin-left:15%;  /* centra boton de izquierda a derecha */
+    margin-right:15%; /* centra boton de derecha a izquierda */
+}
+
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+    width: 70%; 
+    margin-left:15%;  /* centra boton de izquierda a derecha */
+    margin-right:15%; /* centra boton de derecha a izquierda */
+	opacity: 0.7;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+    width: 70%; 
+    margin-left:15%;  /* centra boton de izquierda a derecha */
+    margin-right:15%; /* centra boton de derecha a izquierda */
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 40%;
+    height: 40px;
+    margin-left:30%;  /* centra boton de izquierda a derecha */
+    margin-right:30%; /* centra boton de derecha a izquierda */
+    background: #FFF;
+	/*opacity: 0.7;*/
+	 /*background-color: Transparent;*/
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #333;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:Arial;
+    outline: none;
+    cursor: pointer;
+    
+	
+}
+
+.login-block button:hover {
+	opacity: 0.7;
+}

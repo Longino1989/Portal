@@ -1,0 +1,29 @@
+.h1 {
+    margin:0; 
+    padding:0;
+    color:#333;
+    font-size:250%;
+    text-align:left;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.divAuten{
+    background-color:wheat;
+        margin: 15% 35% 25% 35%;
+    
+    }
+.estiloLista{
+        width: 100%;
+        list-style-image: url("../imgsinicio/orbball.png");
+        text-decoration:none;
+                color:#000;
+    }
+    .estiloListaColor {
+        background-color:aqua; 
+        color: black; 
+        border: 2px solid #DAF7A6;
+    }
+    .estiloListaColor:hover {
+        background-color: #DAF7A6 ;
+        color:aqua;
+    }

@@ -1,0 +1,28 @@
+.contenedor {
+    
+    position: relative;
+    display: flex; /* or inline-flex */
+    z-index: 1;
+  }
+  
+  .hijo {
+    width: 800px;
+    height: 1000px;
+    flex-flow: column;
+    /*background-image: url(../../imgsinicio/Tamexito.jpeg);
+     centrar vertical y horizontalmente */
+    position: absolute;
+    margin: 15% 5% 5% 25%; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  }
+  
+  .watermarked {
+    /*content: "";
+    display: block;*/
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-repeat: repeat;
+    opacity: 0.3;
+  }

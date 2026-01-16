@@ -1,0 +1,53 @@
+#contenedor {   
+          width:960px;
+	      margin:5px 5px 5px 20px;  
+	    }  
+/*Imagen flechas*/
+#imgatras:link{ text-decoration:none;}			
+#menu ul { list-style-type: none;
+font-size:12px;}
+#menu ul li.nivel1 { 
+float: left;
+/*width:auto;
+height:10px;*/
+margin-right:4px;
+}
+#menu ul li a {display: block;
+text-decoration: none;
+color:#000;
+background-color: #E2F4FE;;
+border:#09F solid 1px;
+position: relative;
+padding: 3px;
+}
+#menu ul li:hover {position: relative;}
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+background-color: #A8D3FF;
+color:#000;
+position: relative;
+}
+#menu ul li a.nivel1 {
+	display: block !important;
+    position: relative;
+                     }
+#menu ul li ul {display: none;}
+#menu ul li a:hover ul, #menu ul li:hover ul {display: block;
+position:absolute; left: -40px;
+}
+#menu ul li ul li a {width: 115px; height: 13px;
+background:#FFF;
+border-color:#CCC;
+}
+#menu ul li ul li a:hover {
+border-top-color: #000;
+position: relative;
+}
+.gris {color: #666;}
+#tablaFolio{ width:800px;}
+#divComentarios{ border-top:solid #60A9F2; height:120px; width:800px; overflow:auto; font-size:12px;}
+#divConsulta{border:solid #60A9F2; width:800px;}
+#divComentarios{ background-color:#F2F2F2}
+.spanPanAzul {color:#3366cc;cursor:pointer}
+ul#files{ list-style:none; padding:0; margin:0; }
+ul#files li{ padding:10px; margin-bottom:2px; width:200px; float:left; margin-right:10px;}
+ul#files li img{ max-width:180px; max-height:150px; }
